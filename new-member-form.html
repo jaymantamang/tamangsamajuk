@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Support our mission to make a difference. Join us in empowering communities, providing aid, and creating a better future for those in need.">
+    <meta name="keywords" content="HTML, CSS, Jquery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./assets/vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/slicknav/slicknav.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/venobox/venobox.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/image/tamang-samaj-uk-favicon.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="top-header py-2">
+            <div class="container">
+                <div class="d-flex justify-content-end align-items-center gap-5">
+                    <div class="add-member">
+                        <a class="fw-bold" href="./new-member-form.html"><i class="me-1 fa-solid fa-plus"></i>New
+                            Member</a>
+                    </div>
+                    <div class="social-media d-flex gap-3 align-items-center">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header navbar-expand-xl">
+            <div class="container">
+                <div class="menu-wrapper d-flex justify-content-between align-items-center">
+                    <div class="site-logo d-flex align-items-center gap-3">
+                        <a href="./index.html"><img src="./assets/image/tamangSamajuk.png" alt="Charity-logo"></a>
+                        <h3 class="mb-0"><a href="./index.html">Tamang Samaj UK<span class="mt-1 d-block">Charity Reg
+                                    No:12342434</span></a></h3>
+                    </div>
+                    <div class="nav-wrap">
+                        <button class="d-xl-none site-nav-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvas_navigation" aria-controls="offcanvas_navigation">
+                            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22,17 L22,19 L2,19 L2,17 L22,17 Z M22,11 L22,13 L2,13 L2,11 L22,11 Z M22,5 L22,7 L2,7 L2,5 L22,5 Z"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <div class="header-offcanvas offcanvas offcanvas-start" tabindex="-1" id="offcanvas_navigation">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <nav class="header-nav">
+                                    <ul class="menu d-flex flex-wrap gap-4">
+                                        <li><a href="./index.html">Home</a></li>
+                                        <li><a href="./about.html">About Us</a></li>
+                                        <li><a href="./news.html">News</a></li>
+                                        <li><a href="./Event.html">Events</a></li>
+                                        <li><a href="./executive-member.html">Executive Members</a></li>
+                                        <li><a href="./gallery.html">Gallery</a></li>
+                                        <li><a href="./contact.html">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="new-member block">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-4 mb-4">
+                <div class="col md-5">
+                    <h2 class="h3 text-center">Membership Registration</h2>
+                </div>
+            </div>
+            <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="personal-tab" data-bs-toggle="tab"
+                        data-bs-target="#personal-tab-pane" type="button" role="tab" aria-controls="personal-tab-pane"
+                        aria-selected="true">Personal Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="address-tab" data-bs-toggle="tab" data-bs-target="#address-tab-pane"
+                        type="button" role="tab" aria-controls="address-tab-pane" aria-selected="false">Address
+                        Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact
+                        Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family-tab-pane"
+                        type="button" role="tab" aria-controls="family-tab-pane" aria-selected="false">Family Details
+                        Details</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel"
+                    aria-labelledby="personal-tab" tabindex="0">
+                    <form action="#" class="personal-details">
+                        <div class="form-group">
+                            <label for="MmberShipType">MemberShip Type</label>
+                            <select name="Membertype" id="MemberShip">
+                                <option value="member1">Member 1</option>
+                                <option value="member2">Member 2</option>
+                                <option value="member3">Member 3</option>
+                                <option value="member4">Member 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <select name="titleType" id="titleType">
+                                <option value="title1">Title 1</option>
+                                <option value="title2">Title 2</option>
+                                <option value="title3">Title 3</option>
+                                <option value="title4">Title 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="MiddleName">Middle Name</label>
+                            <input type="text" name="MiddleName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="LastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Image</label>
+                            <input type="file" name="file" required>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="nextToAddress" type="button">Next</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="address-tab-pane" role="tabpanel" aria-labelledby="address-tab"
+                    tabindex="0">
+                    <form action="#" class="address-details">
+                        <div class="form-group">
+                            <label for="houseNumberName">House Number or Name</label>
+                            <input type="text" placeholder="House Number or Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="street">Street</label>
+                            <input type="text" placeholder="Street" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="locality">Locality</label>
+                            <select name="localityType" id="localityType">
+                                <option value="locality">Locality 1</option>
+                                <option value="locality2">Locality 2</option>
+                                <option value="locality3">Locality 3</option>
+                                <option value="locality4">Locality 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="town">Town</label>
+                            <select name="townType" id="townType">
+                                <option value="town1">Town 1</option>
+                                <option value="town2">Town 2</option>
+                                <option value="town3">Town 3</option>
+                                <option value="town4">Town 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select name="countryType" id="countryType">
+                                <option value="country1">Country 1</option>
+                                <option value="country2">Country 2</option>
+                                <option value="country3">Country 3</option>
+                                <option value="country4">Country 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="PostalCode">Postal Code</label>
+                            <input type="text" placeholder="Postal Code" required>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" id="nextToContact" type="button">Next</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                    tabindex="0">
+                    <form action="#" class="contact-details">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="landLine">Landline</label>
+                            <input type="tel" placeholder="Landline" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <button class="btn btn-primary" id="nextToFamily" type="button">Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="family-tab-pane" role="tabpanel" aria-labelledby="family-tab" tabindex="0">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <!-- Add button -->
+                            <button class="rounded btn btn-primary" id="addBtn" type="button">Add</button>
+                        </li>
+                    </ul>
+                
+                    <!-- Form template (hidden) -->
+                    <div id="familyFormTemplate" style="display:none;">
+                        <div class="familyFormInstance">
+                            <form action="#" class="family-details">
+                                <div class="form-group">
+                                    <label for="relation" class="form-label">Relation</label>
+                                    <select name="relationType" id="relationType">
+                                        <option value="relation1">Relation 1</option>
+                                        <option value="relation2">Relation 2</option>
+                                        <option value="relation3">Relation 3</option>
+                                        <option value="relation4">Relation 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Title</label>
+                                    <select name="titleType" id="titleType">
+                                        <option value="title1">Title 1</option>
+                                        <option value="title2">Title 2</option>
+                                        <option value="title3">Title 3</option>
+                                        <option value="title4">Title 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="MiddleName">Middle Name</label>
+                                    <input type="text" name="MiddleName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" name="LastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Image</label>
+                                    <input type="file" name="file" required>
+                                </div>
+                
+                                <div class="form-group">
+                                    <button type="button" class="btn mb-3 btn-danger removeBtn">Remove</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                
+                    <!-- Container where multiple forms will be added -->
+                    <div id="formsContainer"></div>
+                
+                    <!-- Submit button (only one) -->
+                    <div id="submitContainer" style="display: none;">
+                        <button type="submit" class="btn btn-success" id="submitBtn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 col-xl-4">
+                    <div class="site-logo d-flex align-items-center gap-3">
+                        <a href="./index.html"><img src="./assets/image/tamang-samaj-uk-rooter-logo.png"
+                                alt="Charity-logo"></a>
+                        <h3 class="mb-0"><a href="./index.html">Tamang Samaj UK<span class="mt-1 d-block">Charity Reg
+                                    No:12342434</span></a></h3>
+                    </div>
+                    <div class="footer-content mt-4">
+                        <p class="mb-0 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+                            architecto neque dolor atque ullam labore! Amet ad deleniti assumenda non voluptates ex
+                            velit, voluptatum beatae animi reiciendis dolorum voluptate at.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-2 offset-xl-1">
+                    <h6>Quicks Links</h6>
+                    <ul class="footer-quick-link mt-4">
+                        <li>
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">about us</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">news</a>
+                        </li>
+                        <li>
+                            <a href="./Event.html">events</a>
+                        </li>
+                        <li>
+                            <a href="./executive-member.html">executive members</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html">gallery</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-2">
+                    <h6>Social Media</h6>
+                    <div class="d-flex footer-social gap-3 mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3">
+                    <h6>Contact Us</h6>
+                    <ul class="footer-contact-info mt-4">
+                        <li>
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <p class="mb-0 fw-medium">123 Street, City, Country</p>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <a href="tel:+1234567890">+123 456 7890</a>
+                        </li>
+                        <li>
+                            <div class="info-icon">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="./assets/vendors/venobox/venobox.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/slicknav/jquery.slicknav.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
